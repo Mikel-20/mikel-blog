@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+
+:root {
+  --orange: #f9004d;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0.7%;
+  padding-top: 12rem;
+  background-image: url(../IMAGES/handss.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0.3);
+  width: 100%;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #f9004d;
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+}
+
+#menu {
+  font-size: 3rem;
+  color: #666;
+  cursor: pointer;
+  margin: 1rem;
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  background: var(--orange);
+  padding: 1rem;
+
+  /*to make the nav horizontal*/
+}
+
+.navbar ul li {
+  margin: 0 2.5rem;
+}
+
+.navbar ul li a {
+  font-size: 2rem;
+  color: #fff;
+  background: #f9004d;
+font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: rgb(119, 115, 115);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content {
+  flex: 1 1 40rem;
+  margin-left: 50px;
+  padding: 30px;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.home-paragraph{
+  color: #d4d4d4;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/*button for get started*/
+.btn {
+  font-size: 2rem;
+  padding: 0.7rem 4rem;
+  background: var(--orange);
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background: #333;
+  color: #ff9814;
+}
+
+
+
+
+
+/*ABOUT STYLES*/
+
+.about{
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  padding: 100px 10px;
+  background-color: #191919;
+}
+
+img{
+  height: auto;
+  width: 430px;
+ margin-left: 40px;
+padding-right: 40px;
+ margin-top: 40px;
+
+}
+
+.content1{
+margin-top: 160px;
+  align-items: center;
+  justify-content: center;  
+  display: flex;
+  padding: 0 10px 0 0;
+}
+
+
+.about1-paragraph{
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+}
+
+
+.about-h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.about-h2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #f9004d;
+  text-align: left;
+padding-top: 12px;
+padding-bottom: 6px;
+}
+
+.about-paragraph {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  margin-right: 15px;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+}
+
+span{
+  color: #d4d4d4;
+}
+
+
+/*Services SECTION*/
+
+.section{
+  min-height: 100vh;
+  background: #eee;
+  margin-top: 15%;
+}
+
+.section .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.section .box-container .box{
+  background: #fff;
+  margin: 2rem;
+padding: 1rem;
+width: 40rem;
+text-align: center;
+box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.3);
+}
+
+.section .box-container .box i{
+  font-size: 4rem;
+  color: #ff9814;
+}
+
+.heading2{
+  font-size: 2rem;
+color: #444;
+}
+
+.service-p1{
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.span{
+  color: #ff9814;
+  font-weight: bold;
+}
+
+
+
+/*  PLAN */
+
+.plan1{
+  margin-top: 50%;
+  margin-left: 30px;
+  min-height: 50vh;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan1{
+  font-size: 2rem;
+}
+
+/*Contact Styles*/
+
+.contact{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact form{
+  flex: 1 1 40rem;
+  padding: 2rem;
+  margin: 5rem 10rem ;
+  margin-top: 20rem;
+  box-shadow: 0 0 0.5rem rgba(0,0,.3);
+}
+
+.contact .content2{
+  flex: 1 1 40rem;
+  padding: 3rem 1rem;
+  margin-top: 20rem ;
+}
+
+.contact form .box{
+  width: 100%;
+  color: #333;
+  height: 4rem;
+  font-size: 1.7rem;
+  border-bottom: .2rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+  margin: 1rem 0;
+}
+
+.contact form .box:focus{
+border-color: var(--orange);
+}
+
+.contact form .box::placeholder{
+  text-transform: capitalize;
+}
+
+
+.contact form .message{
+  height: 15rem;
+  resize: none;
+}
+
+
+.contact .content2 h3{
+font-size: 4rem;
+color: #444;
+}
+
+
+.contact .content2 p{
+  font-size: 2rem;
+  color: #666;
+  padding: 1rem 0;
+  }
+
+
+  .contact .content2 .icon{
+    font-size: 1.7rem;
+    color: #333;
+    padding: 0.5rem 0;
+    }
+
+    .contact .content2 i{
+   font-size: 1.8rem;
+    color:#f9004d;
+   padding: 1rem 1rem;
+ }
+  
+
+
+/*Footer*/
+
+.footer{
+  background: #333;
+}
+
+.footer .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+  margin: 2rem;
+  flex:1 1 30rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2rem;
+  color: #ff9814;
+}
+
+.footer .box-container .box p{
+  color: #eee;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+
+}
+
+.footer .box-container .box a{
+  color: #eee;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+display: block;
+}
+
+.footer .box-container .box a:hover{
+  color: #ff9814;
+}
+
+.footer .box-container .box:nth-child(2){
+  text-align: center;
+}
+
+.footer .box-newsletter{
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  flex:1 1 30rem;
+}
+.footer .box-newsletter h3{
+  font-size: 2rem;
+  color: #ff9814;
+  position: absolute;
+  padding-left: 3px;
+  margin-bottom: 120px;
+}
+
+.footer .box-newsletter form p{
+  color: #eee;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+
+}
+
+.footer .box-newsletter form input[type='email']{
+  height: 4.1rem;
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 0 1rem;
+  margin-left: 2px;
+}
+
+.footer .box-container form .btn{
+  margin-top: 4px;
+}
+
+
+.footer .box-container form .btn:hover{
+  color: #ff9814;
+  background: #191919;
+}
+
+.credits{
+  color: rgb(240, 62, 62);
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media (max-width:768px) {
+  .contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .contact form{
+    flex: 1 1 40rem;
+    width: 100px;
+    box-shadow: 0 0 0.5rem rgba(0,0,.3);
+  }
+  
+  .contact .content2{
+    flex: 1 1 40rem;
+    padding: 3rem 1rem;
+    margin-top: 4rem ;
+  }
+  
+  .contact form .box{
+    width: 100%;
+    color: #333;
+    height: 3rem;
+    font-size: 1.7rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+    text-transform: none;
+    margin: 1rem 0;
+  }
+  
+  .contact form .box:focus{
+  border-color: var(--orange);
+  }
+  
+  .contact form .box::placeholder{
+    text-transform: capitalize;
+  }
+  
+  
+  .contact form .message{
+    height: 15rem;
+    resize: none;
+  }
+  
+  
+  .contact .content2 h3{
+  font-size: 3rem;
+  color: #444;
+  padding: 2rem;
+  }
+  
+  
+  .contact .content2 p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 2rem;
+    }
+  
+  
+    .contact .content2 .icon{
+      font-size: 1.7rem;
+      color: #333;
+      padding: 0.5rem 0;
+      }
+  
+      .contact .content2 i{
+     font-size: 1.8rem;
+      color:#f9004d;
+     padding: 1rem 1rem;
+   }
+    
+  
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed; /*this has made the menu bar to shift to the right side*/
+    top: 6.2rem;
+    right: -120%; /*this will make the nav items to disapear fro mthe screen to be used in responsive--js*/
+    height: 100%;
+    width: 100%;
+    border-top: 2rem solid rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar ul {
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+    background: #fff;
+    padding-bottom: 15rem;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .navbar ul li a {
+    font-size: 4rem;
+    color: #333;
+    display: block;
+    font-weight: lighter;
+    background: #eee;
+  }
+  .navbar ul li a:hover {
+    color: rgb(189, 175, 175);
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .navbar.nav-toggle {
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about{
+  min-height: 90vh;
+  display: flex;
+  width: 100%;
+  padding: 35px 10px;
+  background-color: #191919;
+}
+
+img{
+  height: auto;
+  width: 350px;
+ margin-left: 10px;
+padding-right: 0;
+ margin-top: 33px;
+
+}
+
+.content1{
+  align-items: center;
+  justify-content: center;  
+  display: flex;
+  padding: 25 10px 0 0;
+  flex-direction: column ;
+}
+
+
+.about1-paragraph{
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+}
+
+
+.about-h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.about-h2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #f9004d;
+  text-align: left;
+padding-top: 12px;
+padding-bottom: 6px;
+}
+
+.about-paragraph {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  margin-right: 15px;
+}
+
+
+span{
+  color: #d4d4d4;
+}
+
+}
